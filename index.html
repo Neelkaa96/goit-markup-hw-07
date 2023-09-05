@@ -20,11 +20,82 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
   <body>
     <header>
       <div class="container header-wrapper">
+        <button class="nav-button js-open-menu">
+          <svg class="nav-button-item">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
         <nav class="header-navigation">
           <a class="logo" href="./index.html">
             WEB
             <span style="color: #2e2f42">STUDIO</span>
           </a>
+
+          <div class="menu-wrapper js-menu-container">
+            <button class="menu-button js-close-menu">
+              <svg class="nav-button-item">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <menu class="menu">
+              <li>
+                <a class="menu-mobile-link-items-current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a class="menu-mobile-link-items" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li><a class="menu-mobile-link-items" href="#">Contacts</a></li>
+            </menu>
+            <address>
+              <ul>
+                <li>
+                  <a
+                    class="address-link-items address-link-phone"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="address-link-items address-link-mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <ul class="menu-mobile-media">
+              <li class="icon-media-round">
+                <a href="#"></a>
+                <svg class="main-team-media-items">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </li>
+              <li class="icon-media-round">
+                <a href="#"></a>
+                <svg class="main-team-media-items">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </li>
+              <li class="icon-media-round">
+                <a href="#"></a>
+                <svg class="main-team-media-items">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="icon-media-round">
+                <a href="#"></a>
+                <svg class="main-team-media-items">
+                  <use href="./images/icons.svg#icon-linkedin2"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
           <ul class="menu-link">
             <li>
               <a class="menu-link-items-current" href="./index.html">Studio</a>
@@ -65,7 +136,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
           <div class="modal-body">
             <button class="modal-close" data-modal-close>
               <svg class="modal-close-icon-items">
-                <use href="./images/icons.svg#icon-close-black"></use>
+                <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
             <p class="modal-heading">
@@ -79,7 +150,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                 <div class="modal-field-wrapper">
                   <input id="username" type="text" name="name" required />
                   <svg class="modal-icon-1">
-                    <use href="./images/icons.svg#icon-person-black"></use>
+                    <use
+                      href="./images/icons.svg#icon-person-black-18dp-1"
+                    ></use>
                   </svg>
                 </div>
               </div>
@@ -96,7 +169,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                     required
                   />
                   <svg class="modal-icon-2">
-                    <use href="./images/icons.svg#icon-phone-black"></use>
+                    <use
+                      href="./images/icons.svg#icon-phone-black-18dp-2"
+                    ></use>
                   </svg>
                 </div>
               </div>
@@ -107,7 +182,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                 <div class="modal-field-wrapper">
                   <input id="e-mail" type="email" name="e-mail" required />
                   <svg class="modal-icon-2">
-                    <use href="./images/icons.svg#icon-email-black"></use>
+                    <use
+                      href="./images/icons.svg#icon-email-black-18dp-2"
+                    ></use>
                   </svg>
                 </div>
               </div>
@@ -133,7 +210,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                 <label class="modal-check-text" for="tc">
                   <span class="modal-check-span">
                     <svg class="checkbox-icon">
-                      <use href="./images/icons.svg#icon-Checkbox"></use>
+                      <use href="./images/icons.svg#icon-Vector"></use>
                     </svg>
                   </span>
                   I accept the terms and conditions of the
@@ -159,11 +236,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="main-content-list">Strategy</h3>
-              <p class="main-content-items">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
+              <div>
+                <h3 class="main-content-list">Strategy</h3>
+                <p class="main-content-items">
+                  Our goal is to identify the business problem to walk away with
+                  the perfect and creative solution.
+                </p>
+              </div>
             </li>
             <li>
               <div class="main-content-icons">
@@ -171,23 +250,27 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="main-content-list">Punctuality</h3>
-              <p class="main-content-items">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
+              <div>
+                <h3 class="main-content-list">Punctuality</h3>
+                <p class="main-content-items">
+                  Bring the key message to the brand's audience for the best
+                  price within the shortest possible time.
+                </p>
+              </div>
             </li>
             <li>
               <div class="main-content-icons">
                 <svg class="main-content-icons-items">
-                  <use href="./images/icons.svg#icon-diagram-1"></use>
+                  <use href="./images/icons.svg#icon-diagram1"></use>
                 </svg>
               </div>
-              <h3 class="main-content-list">Diligence</h3>
-              <p class="main-content-items">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
+              <div>
+                <h3 class="main-content-list">Diligence</h3>
+                <p class="main-content-items">
+                  Research and confirm brands that present the strongest digital
+                  growth opportunities and minimize risk.
+                </p>
+              </div>
             </li>
             <li>
               <div class="main-content-icons">
@@ -195,11 +278,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="main-content-list">Technologies</h3>
-              <p class="main-content-items">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
+              <div class="values-column">
+                <h3 class="main-content-list">Technologies</h3>
+                <p class="main-content-items">
+                  Design practice focused on digital experiences. We bring forth
+                  a deep passion for problem-solving.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -243,6 +328,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
             <li>
               <img
                 src="images/team/man.jpg"
+                srcset="images/team/man2x.jpg 2x"
                 alt="smiling gently bearded man wearing a shirt"
                 width="264"
                 height="260"
@@ -254,25 +340,25 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use href="./images/icons.svg#icon-Ellipse"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-7"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-1"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-2"></use>
                     </svg>
                   </li>
                 </ul>
@@ -281,6 +367,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
             <li>
               <img
                 src="images/team/man2.jpg"
+                srcset="images/team/man22x.jpg 2x"
                 alt="broadly smiling man in shirt looking to the side"
                 width="264"
                 height="260"
@@ -292,25 +379,25 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use href="./images/icons.svg#icon-Ellipse"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-7"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-1"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-2"></use>
                     </svg>
                   </li>
                 </ul>
@@ -319,6 +406,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
             <li>
               <img
                 src="images/team/women.jpg"
+                srcset="images/team/women2x.jpg 2x"
                 alt="dark-haired girl smiling softly"
                 width="264"
                 height="260"
@@ -330,25 +418,25 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use href="./images/icons.svg#icon-Ellipse"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-7"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-1"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-2"></use>
                     </svg>
                   </li>
                 </ul>
@@ -357,6 +445,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
             <li>
               <img
                 src="images/team/man1.jpg"
+                srcset="images/team/man12x.jpg 2x"
                 alt="smiling bearded man wearing a T-shirt"
                 width="264"
                 height="260"
@@ -368,25 +457,25 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use href="./images/icons.svg#icon-Ellipse"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-twitter"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-7"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-facebook"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-1"></use>
                     </svg>
                   </li>
                   <li class="icon-media-round">
                     <a href="#"></a>
                     <svg class="main-team-media-items">
-                      <use href="./images/icons.svg#icon-linkedin2"></use>
+                      <use href="./images/icons.svg#icon-Ellipse-2"></use>
                     </svg>
                   </li>
                 </ul>
@@ -401,30 +490,30 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
           <div class="customers-list">
             <a href="#0">
               <svg class="customers-items">
-                <use href="./images/icons.svg#icon-Client1"></use>
+                <use href="./images/icons.svg#icon-Logo-2"></use>
               </svg>
             </a>
             <svg class="customers-items">
-              <use href="./images/icons.svg#icon-Client2"></use>
+              <use href="./images/icons.svg#icon-Logo"></use>
             </svg>
             <a href="#0">
               <svg class="customers-items">
-                <use href="./images/icons.svg#icon-Client4"></use>
+                <use href="./images/icons.svg#icon-Logo-1"></use>
               </svg>
             </a>
             <a href="#0">
               <svg class="customers-items">
-                <use href="./images/icons.svg#icon-Client4"></use>
+                <use href="./images/icons.svg#icon-Logo-3"></use>
               </svg>
             </a>
             <a href="#0">
               <svg class="customers-items">
-                <use href="./images/icons.svg#icon-Client5"></use>
+                <use href="./images/icons.svg#icon-Logo-4"></use>
               </svg>
             </a>
             <a href="#0">
               <svg class="customers-items">
-                <use href="./images/icons.svg#icon-Client6"></use>
+                <use href="./images/icons.svg#icon-Logo-5"></use>
               </svg>
             </a>
           </div>
@@ -449,38 +538,37 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
             <li>
               <a class="icon-media-round-footer" href="#0">
                 <svg class="footer-media-items">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#icon-Ellipse-3"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="icon-media-round-footer" href="#0">
                 <svg class="footer-media-items">
-                  <use href="./images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#icon-Ellipse-4"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="icon-media-round-footer" href="#0">
                 <svg class="footer-media-items">
-                  <use href="./images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#icon-Ellipse-5"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="icon-media-round-footer" href="#0">
                 <svg class="footer-media-items">
-                  <use href="./images/icons.svg#icon-linkedin2"></use>
+                  <use href="./images/icons.svg#icon-Ellipse-6"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe">
+        <div>
           <form>
             <p class="footer-media-text">Subscribe</p>
             <div class="footer-field-wrapper">
-              <label for="email"></label>
               <input
                 class="footer-input"
                 id="email"
@@ -489,19 +577,18 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css
                 placeholder="E-mail"
                 required
               />
-              <div>
-                <button class="button-subscribe" type="submit">
-                  Subscribe
-                  <svg class="footer-subscribe-icon">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
+              <button class="button-subscribe" type="submit">
+                Subscribe
+                <svg class="footer-subscribe-icon">
+                  <use href="./images/icons.svg#icon-Frame-3"></use>
+                </svg>
+              </button>
             </div>
           </form>
         </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
