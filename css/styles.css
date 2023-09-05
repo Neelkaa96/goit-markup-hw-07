@@ -451,7 +451,7 @@ header {
 .modal-close-icon-items {
   height: 8px;
   width: 8px;
-  fill: var(--modal-overlay);
+  color: var(--modal-overlay);
 }
 
 .is-hidden {
@@ -827,8 +827,8 @@ header {
 }
 
 .main-team-media-items {
-  width: 8px;
-  height: 8px;
+  width: 16px;
+  height: 16px;
   fill: var(--light);
 }
 
@@ -1057,6 +1057,7 @@ header {
 .footer-subscribe-icon {
   width: 24px;
   height: 24px;
+  fill: var(--light);
 }
 
 /*Footer -  TABLET */
